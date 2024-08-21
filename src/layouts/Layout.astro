@@ -1,0 +1,64 @@
+
+---
+import '@fontsource-variable/bodoni-moda-sc';
+---
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section with Buttons</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the hero section background */
+ 
+        .button-image {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxDk-x_Kyi5UcCjT0cZhBGN-yu0uZpnLMC6mdVspq7F11ZjfhVatBWStgPECjd0UMUFlI&usqp=CAU'); /* Replace with actual image URL */
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            inset: 0;
+            z-index: 0; /* Image is behind the text */
+        }
+
+			
+    </style>
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col font-serif">
+    <!-- Navbar -->
+    <nav class="bg-gray-900 h-16 text-gray-300 shadow-md">
+        <div class="container mx-auto flex items-center justify-between h-full px-4">
+            <a href="https://flowbite.com/" class="flex items-center space-x-2 rtl:space-x-reverse h-full">
+                <img src="https://i.redd.it/edited-the-narcissist-logos-in-png-for-yall-v0-kx9m3375tk791.png?width=3000&format=png&auto=webp&s=d9d13f09622bed432815775962a46833a01ebafe" class="h-14" alt="Flowbite Logo" />
+                <span class="text-2xl font-semibold text-gray-300">Flowbite</span>
+            </a>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="hover:text-white transition duration-300">Home</a></li>
+                <li><a href="#" class="hover:text-white transition duration-300">About</a></li>
+                <li><a href="#" class="hover:text-white transition duration-300">Services</a></li>
+                <li><a href="#" class="hover:text-white transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-[url('https://s5.ezgif.com/tmp/ezgif-5-a5bd69164e.gif')] bg-no-repeat  text-white p-12 rounded-lg shadow-lg flex-grow flex items-center justify-center">
+        <div class="relative w-full max-w-4xl bg-black bg-opacity-60 p-10 rounded-lg flex flex-col items-center justify-center">
+            <h1 class="text-5xl font-bold mb-6 font-serif text-gray-100">Unique's Top 3 Artists by Genre</h1>
+            <p class="text-2xl mb-12 font-light text-gray-300">Find the perfect genre for your mood</p>
+            <div class="flex justify-center gap-8">
+                <div class="relative ">
+                    <button class="bg-gray-200 text-black px-12 py-6 rounded-lg font-semibold transition duration-300 hover:bg-gray-300 text-xl">
+                        <span class="relative z-10">Rap</span>
+                        <span class=" absolute inset-0 z-0"></span>
+                    </button>
+                </div>
+                <button class="bg-gray-200 text-black px-12 py-6 rounded-lg font-semibold transition duration-300 hover:bg-gray-300 text-xl">Indie</button>
+                <button class="bg-gray-200 text-black px-12 py-6 rounded-lg font-semibold transition duration-300 hover:bg-gray-300 text-xl">Jazz</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
